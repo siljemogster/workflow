@@ -1,21 +1,21 @@
 # Workflow repo for the CA
 
-Description. 
+Description.
 
-## Features / User stories 
+## Features / User stories
 
-- User can register 
-- User can login 
+- User can register
+- User can login
 
-## Setup 
+## Setup
 
-To install 
+To install
 
-```bash 
+```bash
 npm install
 ```
 
-In development: 
+In development:
 
 ```bash
 npm run dev

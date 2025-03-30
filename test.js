@@ -1,1 +1,1 @@
-const test4 = 'final test'
+const finalTest = 'working config';
