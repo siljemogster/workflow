@@ -1,1 +1,0 @@
-const finalTest = 'working config';
