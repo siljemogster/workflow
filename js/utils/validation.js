@@ -1,3 +1,7 @@
+export function validateUsername(username) {
+  return username.length >= 3;
+}
+
 export function validateEmail(email) {
   const emailRegex = /^[^\s@]+@(stud\.noroff\.no|noroff\.no)$/;
   return emailRegex.test(email);
