@@ -1,15 +1,43 @@
 {
-  "name": "workflow-repo",
+  "name": "workflow",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Description.",
+  "main": "tailwind.config.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "test": "vitest",
+    "lint": "node_modules/.bin/eslint .",
+    "lint:fix": "node_modules/.bin/eslint . --fix",
+    "format": "node_modules/.bin/prettier --write .",
+    "prepare": "husky install",
+    "start": "live-server --port=5500"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/siljemogster/workflow.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siljemogster/workflow/issues"
+  },
+  "homepage": "https://github.com/siljemogster/workflow#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "dotenv": "^16.5.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.1.0",
+    "vite": "^6.2.3",
+    "vitest": "^3.1.1"
+  },
+  "lint-staged": {
+    "*{js,css,html,md}": "prettier --write",
+    "*.js": "eslint --cache --fix"
   }
 }
